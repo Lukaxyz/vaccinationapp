@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">Vakcinacija</string>
+    <string name="uvod_text">Dobrodošli u aplikaciju koja simulira vakcinaciju za vrijeme pandemije Covid-19! Pritisnite "Registruj se" da bi se registrovali za vakcinaciju u BiH.</string>
+    <string name="intro_text">Welcome! This application simulates the vaccination registration during the Covid-19 pandemic. Press the button to continue. </string>
+    <string name="uvod_button">Registruj se!</string>
+    <string name="info_ime_prezime">Ime i Prezime: </string>
+    <string name="info_spol">Spol: </string>
+    <string name="info_godine">Datum rođenja: </string>
+    <string name="info_email">E-mail: </string>
+
+    <string name="vakcine">Vakcine</string>
+
+    <string name="about">About us!</string>
+    <string name="about2">Ovaj projekat je napravljen za predmet Razvoj Mobilnih Aplikacija na III. godini I. ciklusa na Prirodno-matematičkom fakultetu u Sarajevu</string>
+    <string name="about3">Luka Milenković i Nadžida Idrizović</string>
+
+    <string name="musko">Muško </string>
+    <string name="zensko">Žensko </string>
+    <string name="ime">Ime..</string>
+    <string name="datum">01/01/2001</string>
+    <string name="email">vakcinacija@email.com</string>
+
+    <string name="share">%1$s se prijavio/la za vakcinaciju i odabrao/la je vakcinu %2$s</string>
+
+
+    <string name="prvaVakcina"><b>AstraZeneca je proizvedena na Univerzitetu u Oxfordu.</b><br></br>
+        Način istraživanja: AZD1222 (ChAdOx1).<br></br>
+        Vrsta Vakcine: Nereplicirajući virusni vektor<br></br>
+        Način primjene: Intramuskularna vakcina
+    </string>
+    <string name="drugaVakcina"><b>Sputnik V je proizvedena na istraživačkom institutu Gamelaya.</b><br></br>
+    Način istraživanja: Gam-COVID-Vac<br></br>
+    Vrsta Vakcine: Nereplicirajući virusni vektor<br></br>
+    Način primjene: Intramuskularna vakcina
+    </string>
+    <string name="trecaVakcina"><b>Pfizer-BioNTech je proizvedena u Fosun Pharma institutu.</b><br></br>
+    Način istraživanja: BNT162b2<br></br>
+    Vrsta Vakcine: RNA<br></br>
+    Način primjene: Intramuskularna vakcina
+    </string>
+    <string name="cetvrtaVakcina"><b>BIBP je prozivedena na institutu bioloških proizvoda Beijing.</b><br></br>
+    Način istraživanja: BBIBP-CorV<br></br>
+    Vrsta Vakcine: Inaktivirana<br></br>
+    Način primjene: Intramuskularna vakcina
+    </string>
+
+
+    <string name="pitanje1">Da li pripadate jednoj od ovih grupa ?</string>
+    <string name="odgovor1">Bolujem od Covid-19</string>
+    <string name="odgovor2">Imam povišen šećer</string>
+    <string name="odgovor3">Imam hepatitis A ili B</string>
+    <string name="odgovor4">Trudna sam/ dojim</string>
+    <string name="pitanje1_button">Dalje</string>
+    <string name="upute_pitanje1">Vama se ne preporučuje trenutna vakcinacija. U slučaju da mislite da trebate da se vakcinišete iako ste u ugroženoj skupini, javite se na mail vakcinacija@email.com ili na fax 033–123-456.<b> U slučaju Covid-19 bolesti javite se svom liječniku.</b></string>
+    <string name="upute_pitanje2">Trenutno, samo BiH državljani mogu da se vakcinišu u BiH. Ako želite još informacija javite se na mail vakcinacija@email.com ili na fax 033–123-456.</string>
+    <string name="upute_pitanje1_nazad_button">Povratak na početak</string>
+
+
+    <string name="bibp">BIBP</string>
+    <string name="pfizer">Pfizer</string>
+    <string name="sputnik_v">Sputnik V</string>
+    <string name="astrazeneca">AstraZeneca</string>
+    <string name="odaberite_koju_vakcinu_elite">Odaberite koju vakcinu želite</string>
+    <string name="dalje">Dalje</string>
+    <string name="da_li_imate_bih_dr_avljanstvo">Da li imate BiH državljanstvo?</string>
+    <string name="da">Da</string>
+    <string name="ne">Ne</string>
+    <string name="kojoj_grupi_pripadate">Kojoj grupi pripadate?</string>
+    <string name="ostalo">Ostalo</string>
+    <string name="zaposleni_u_obrazovnim_ustanovama">Zaposleni u obrazovnim ustanovama</string>
+    <string name="osobe_u_starosnom_dobu_izme_u_65_74_godine">Osobe u starosnom dobu između 65-74 godine</string>
+    <string name="osobe_starije_od_75_godina">Osobe starije od 75 godina</string>
+    <string name="osobe_sa_hroni_nim_bolestima">Osobe sa hroničnim bolestima</string>
+    <string name="osobe_u_stara_kim_domovima">Osobe u staračkim domovima</string>
+    <string name="medicinski_radnici">Medicinski radnici</string>
+
+
+    <string name="vakcina">Vakcina: </string>
+    <string name="vakcina2">Datum vakcinacije: </string>
+    <string name="vakcina3">Trenutno vakcinisano: </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

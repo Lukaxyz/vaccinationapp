@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/uvodFragment">
+
+    <fragment
+        android:id="@+id/uvodFragment"
+        android:name="com.example.vakcinacija.UvodFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_uvod">
+        <action
+            android:id="@+id/action_uvodFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.example.vakcinacija.InfoFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_info">
+        <action
+            android:id="@+id/action_infoFragment_to_pitanje1Fragment"
+            app:destination="@id/pitanje1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pitanje1Fragment"
+        android:name="com.example.vakcinacija.Pitanje1Fragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_pitanje1">
+        <action
+            android:id="@+id/action_pitanje1Fragment_to_covidFragment"
+            app:destination="@id/covidFragment"
+            app:popUpTo="@id/uvodFragment" />
+        <action
+            android:id="@+id/action_pitanje1Fragment_to_prioritetFragment"
+            app:destination="@id/prioritetFragment" />
+        <argument
+            android:name="imeiprezime"
+            app:argType="string" />
+        <argument
+            android:name="email"
+            app:argType="string" />
+        <argument
+            android:name="spol"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/covidFragment"
+        android:name="com.example.vakcinacija.CovidFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_covid">
+        <action
+            android:id="@+id/action_covidFragment_to_uvodFragment"
+            app:destination="@id/uvodFragment"
+            app:popUpTo="@id/uvodFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/prioritetFragment"
+        android:name="com.example.vakcinacija.PrioritetFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_prioritet">
+        <action
+            android:id="@+id/action_prioritetFragment_to_pitanje2Fragment"
+            app:destination="@id/pitanje2Fragment" />
+        <argument
+            android:name="imeiprezime"
+            app:argType="string" />
+        <argument
+            android:name="email"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/pitanje2Fragment"
+        android:name="com.example.vakcinacija.Pitanje2Fragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_pitanje2">
+        <action
+            android:id="@+id/action_pitanje2Fragment_to_uputeDrzavljanstvoFragment"
+            app:destination="@id/uputeDrzavljanstvoFragment"
+            app:popUpTo="@id/uvodFragment" />
+        <action
+            android:id="@+id/action_pitanje2Fragment_to_odabirVakcineFragment"
+            app:destination="@id/odabirVakcineFragment" />
+        <argument
+            android:name="imeiprezime"
+            app:argType="string" />
+        <argument
+            android:name="email"
+            app:argType="string" />
+        <argument
+            android:name="prioritet"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/odabirVakcineFragment"
+        android:name="com.example.vakcinacija.OdabirVakcineFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_odabir_vakcine">
+        <action
+            android:id="@+id/action_odabirVakcineFragment_to_finishFragment"
+            app:destination="@id/finishFragment" />
+        <argument
+            android:name="imeiprezime"
+            app:argType="string" />
+        <argument
+            android:name="email"
+            app:argType="string" />
+        <argument
+            android:name="prioritet"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/uputeDrzavljanstvoFragment"
+        android:name="com.example.vakcinacija.UputeDrzavljanstvoFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_upute_drzavljanstvo">
+        <action
+            android:id="@+id/action_uputeDrzavljanstvoFragment_to_uvodFragment"
+            app:destination="@id/uvodFragment"
+            app:popUpTo="@id/uvodFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/finishFragment"
+        android:name="com.example.vakcinacija.FinishFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_finish">
+        <argument
+            android:name="imeiprezime"
+            app:argType="string" />
+        <argument
+            android:name="email"
+            app:argType="string" />
+        <argument
+            android:name="vakcina"
+            app:argType="string" />
+        <argument
+            android:name="prioritet"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.vakcinacija.AboutFragment"
+        android:label="O projektu"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/vakcineFragment"
+        android:name="com.example.vakcinacija.VakcineFragment"
+        android:label="Vakcine"
+        tools:layout="@layout/fragment_vakcine" />
+</navigation>
